@@ -1,0 +1,129 @@
+.jersey-10-regular {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 5rem;
+    position: relative;
+}
+
+#spin {
+    padding: 10px;
+    background-image: url("images/bean thing.jpg");
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-size: 100%;
+    border-radius: 25px;
+    width: 400px;
+    height: 600px;
+}
+
+#spin:hover {
+    transition: transform 1s ease-in-out 0s;
+    transform: rotate(360deg);
+}
+
+#float {
+    position: relative;
+    padding: 10px;
+    background-image: url("images/alien.jpg");
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-size: 100%;
+    border-radius: 25px;
+    width: 600px;
+    height: 600px;
+}
+
+#float:hover {
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#jump {
+    padding: 10px;
+    background-image: url("images/fox.jpg");
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-size: 100%;
+    border-radius: 25px;
+    width: 400px;
+    height: 600px;
+}
+
+#jump:hover {
+    animation: jump 2s ease-in-out;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(10px) rotate(10deg);
+    }
+
+    50% {
+        transform: translateY(-50px) rotate(-20deg);
+    }
+
+    75% {
+        transform: translateY(10px) rotate(20deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(-10deg);
+    }
+}
+
+#walk {
+    position: relative;
+    padding: 10px;
+    background-image: url("images/leg thing.jpg");
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-size: 100%;
+    border-radius: 25px;
+    width: 600px;
+    height: 600px;
+}
+
+#walk:hover {
+    animation: walk 1s ease-in-out infinite;
+}
+
+@keyframes walk {
+    0% {
+        transform: translateY(0) rotate(15deg);
+    }
+
+    25% {
+        transform: translateY(-50px);
+    }
+
+    50% {
+        transform: translateY(0) rotate(-15deg);
+    }
+    75% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0) rotate(15deg);
+    }
+}
